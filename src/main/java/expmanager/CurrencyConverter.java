@@ -35,7 +35,6 @@ public class CurrencyConverter {
 
             scanner.close();
 
-
             JSONParser jsonParser = new JSONParser();
             JSONObject dataObject = (JSONObject) jsonParser.parse(String.valueOf(informationString));
 

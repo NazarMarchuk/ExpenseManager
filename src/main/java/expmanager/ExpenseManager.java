@@ -2,13 +2,10 @@ package expmanager;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class ExpenseManager {
     private final Map<String, List<Expense>> expenses = new TreeMap<>();
-    private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yy");
     private final CurrencyConverter currencyConverter = new CurrencyConverter();
 
     //add new expense to list and print all the expenses grouped by date

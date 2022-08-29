@@ -12,7 +12,6 @@ public class Expense{
     private String name;
 
     public Expense(String date, String amount, String currency, String name) {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
         this.date = date;
         this.amount = new BigDecimal(amount);
         this.currency = currency;
