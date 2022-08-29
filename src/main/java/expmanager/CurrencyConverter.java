@@ -17,10 +17,8 @@ public class CurrencyConverter {
             String key = "MTrrf5q35fQ08qKh6IBzLIG1zdSglQNf";
             URL url = new URL("https://api.apilayer.com/exchangerates_data/convert?apikey="+key+"&from="+from+"&to="+to+"&amount="+amount);
 
-
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
-
 
             connection.connect();
 
